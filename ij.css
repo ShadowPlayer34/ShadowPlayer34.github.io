@@ -1,0 +1,100 @@
+/*p{
+    color:red;
+}
+body{
+    background-color:antiquewhite;
+}
+div{
+    text-align: center;
+    display: inline;
+    padding: 5px;
+    top: 5px;
+    background-color: rgba(100, 200, 300, 0.3);
+    border: black solid 1px;
+}
+
+.re{
+    background-color: rgba(100, 200, 300, 0.2);
+    font-size: 20px;
+    text-align: center;
+
+    border: black solid 2px;
+    padding: 5px;
+    margin: 15px;
+    transition: 1s;
+    display: inline-block;
+    border-radius: 7px;
+
+}
+.re:hover{
+    background-color: rgba(100, 200, 300, 0.8);
+    color: darkred;
+    font-size: 30px;
+}
+@keyframes yul {
+
+}*/
+body{
+    background-color: black;
+}
+aside a{
+    color: aliceblue;
+    text-decoration: none;
+    /*box-shadow: 4px 4px 10px -5px white,*/
+    /*-5px 4px 10px -5px white;*/
+}
+a:hover{
+    text-decoration: underline;
+}
+
+aside{
+    width: 15%;
+    height: 100%;
+    font-size: 175%;
+    border-right: aliceblue solid 1px;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    color: aliceblue;
+    font-family: "Roboto Thin";
+}
+p{
+    padding-left: 10%;
+    padding-top: 5%;
+}
+.spinner{
+    position: relative;
+    width: 380px;
+    height: 380px;
+    border-radius: 50%;
+    left: 36%;
+    top: 140px;
+}
+.spinner::before,
+.spinner::after{
+    content: "";
+    position: absolute;
+    border-radius: inherit;
+}
+.spinner:before{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(0deg, #ff00cc 0%, #05ee97 100%);
+    animation: spin .5s infinite linear;
+}
+.spinner:after{
+    width: 85%;
+    height: 85%;
+    background-color: #000000;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+@keyframes spin {
+    to{
+        transform: rotate(360deg);
+    }
+}
+iframe{
+    margin-top: 200px;
+}
